@@ -18,8 +18,8 @@ spawn = require( 'child_process' ).spawn,
 sld = require( 'stream-line-dispatch' ),
 ssh = spawn( 'ssh', [ '-i', '~/.ssh/bar', '-tt', 'root@foo.com' ] ),
 transform = sld( {
-    output: process.stdout,
-    writeOutput
+    output: process.stdout, // optional writable stream
+    sendOutput: true // flag if to write to stream
 });  
 
 transform.on( '#$', function() { // terminal char aka ready for input
