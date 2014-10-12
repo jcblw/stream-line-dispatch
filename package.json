@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "stream-line-dispatch",
   "version": "0.1.0",
   "description": "A way to read lines from a stream and dispatch events based off of pattern matching of those strings.",
   "main": "index.js",
