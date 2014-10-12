@@ -22,9 +22,9 @@ transform = sld( {
     writeOutput
 });  
 
-sld.on( '#$', function() { // terminal char aka ready for input
+transform.on( '#$', function() { // terminal char aka ready for input
     ssh.stdin.write( 'exit \n' );
 });
 
-ssh.stdout.pipe( sld );
+ssh.stdout.pipe( transform );
 ```
