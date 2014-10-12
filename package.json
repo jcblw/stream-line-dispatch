@@ -1,0 +1,28 @@
+{
+  "name": "y",
+  "version": "0.1.0",
+  "description": "A way to read lines from a stream and dispatch events based off of pattern matching of those strings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcblw/stream-line-dispatch"
+  },
+  "keywords": [
+    "stream",
+    "transform",
+    "emitter",
+    "events",
+    "match",
+    "dispatch",
+    "line"
+  ],
+  "author": "Jacob Lowe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcblw/stream-line-dispatch/issues"
+  },
+  "homepage": "https://github.com/jcblw/stream-line-dispatch"
+}
