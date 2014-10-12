@@ -10,11 +10,13 @@ npm install stream-line-dispatch
 
 # Usage
 
+Example usage.
+
 ```javascript
 var 
 spawn = require( 'child_process' ).spawn,
 sld = require( 'stream-line-dispatch' ),
-ssh = spawn( 'ssh', [ '--tt', 'root@foo.com' ] ),
+ssh = spawn( 'ssh', [ '-i', '~/.ssh/bar', '-tt', 'root@foo.com' ] ),
 transform = sld( {
     output: process.stdout,
     writeOutput
