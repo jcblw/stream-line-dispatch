@@ -46,7 +46,9 @@ module.exports = function( opts ){
         var lines = chunk.toString( 'utf8' ).trim().split( /(\r?\n)/g );
 
         function eachLine( line ) {
-            var _line = line.trim();
+            // http://www-01.ibm.com/support/docview.wss?uid=swg21453096
+            // removes unicode chars
+            var _line = line.trim().replace(/[^A-Za-z 0-9 \.,\?""!@#\$%\^&\*\(\)-_=\+;:<>\/\\\|\}\{\[\]`~]*/g, '');
             
             if ( opts.sendOutput && opts.output ) {
                 opts.output.write( _line + '\n\r' );
